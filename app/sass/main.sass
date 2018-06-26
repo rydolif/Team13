@@ -1,0 +1,102 @@
+@import "libs"
+@import "base"
+@import "page"
+
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	transition: all .3s
+	z-index: 1001
+
+	&-active
+		background-color: rgba(0, 0, 0, .8)
+		padding: 5px 0
+
+	&__container
+		position: relative
+		display: flex
+		flex-direction: row
+		align-items: center
+
+	&-content
+		padding: 240px 0 180px 0
+		background-position: center
+		background-repeat: no-repeat
+	
+	&__logo
+		margin-right: 20px
+	
+	&__line
+		width: 100%
+
+.nav
+	position: relative
+	padding-bottom: 5px
+	padding-left: 10px
+	&::before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 1px
+		width: 300%
+		background-color: rgba(255, 255, 255, .4)
+
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+	li
+		margin-right: 45px
+		&:last-child
+			margin-right: 0
+
+	a
+		font-size: 12px
+		color: #fff
+
+.info
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	padding-top: 15px
+	padding-left: 10px
+	
+	a
+		color: #fff
+		&:hover
+			color: #fff
+			text-decoration: none
+		&:focus
+			color: #fff
+			text-decoration: none
+
+	&__mail
+		font-family: $title
+		font-weight: 900
+
+		i
+			color: #facb32
+			font-size: 11px
+			margin-right: 10px
+
+	&__tel
+		font-size: 24px
+		font-family: $title
+		font-weight: 900
+	
+	&__soc
+		i
+			color: #fff
+			font-size: 14px
+			margin-right: 10px
+
+.main
+
+.footer
+	height: 1000px
+@import "media" // Always at the end
