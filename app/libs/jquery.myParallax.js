@@ -9,8 +9,6 @@
       var ths = $(this);
 
       ths.css({
-        "min-height" : "500px",
-        "position" : "relative",
         "overflow" : "hidden"
       })
       .wrapInner("<div class='parallax-content' style='position:relative;z-index:1'>")
