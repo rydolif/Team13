@@ -4,6 +4,8 @@
 //----------------------fonts---------------------
 $fonts: 'gilroy', sans-serif
 $title: 'mont', sans-serif
+$fontawesome: 'webfonts', sans-serif
+
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
@@ -17,7 +19,7 @@ html, body
 body
 	overflow-x: hidden
 	position: relative
-	min-width: 400px
+	min-width: 320px
 	font-family: $fonts
 	font-size: 14px
 	color: $text
@@ -63,6 +65,7 @@ ul
 i
 	font-style: normal
 	font-size: 16px
+	font-family: $fontawesome
 
 input, textarea
 	border: none
@@ -88,7 +91,7 @@ input, textarea
 		line-height: 1
 
 input
-	padding: 15px 25px
+	padding: 16px 25px
 	border-radius: 40px
 	font-weight: 400
 	line-height: 1
@@ -106,6 +109,9 @@ a:focus,
 a:hover
 	outline: none
 
+section
+	overflow: hidden
+	
 .link
 	position: relative
 	z-index: 1
@@ -133,6 +139,17 @@ a:hover
 		&::before
 			transform: scale(1)
 
+
+label.error
+	position: absolute
+	top: -20px
+	right: 0
+	left: 0
+	transition: all .3s
+	animation: error .3s linear 1 forwards
+	color: red
+	text-align: center
+	font-weight: 400
 
 @import "_base/preloader"
 @import "_base/btn"

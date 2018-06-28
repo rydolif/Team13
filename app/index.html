@@ -3,22 +3,22 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>start</title>
+	<title>Лендинг Eventteam13</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" href="img/favicon.ico">
 	<meta name="theme-color" content="#000">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
-<!-- 
+
 	<div class="preloader">
 		<div class="pulse"></div>
-	</div> -->
+	</div>
 
 	<header class="header">
 		<div class="container">
@@ -38,15 +38,32 @@
 				<div class="header__line">
 					<nav class="nav">
 						<ul>
-							<li><a href="#" class="link">Кто мы</a></li>
-							<li><a href="#" class="link">Принципы работы</a></li>
-							<li><a href="#" class="link">Наши компетенции</a></li>
-							<li><a href="#" class="link">Услуги</a></li>
-							<li><a href="#" class="link">Мероприятия</a></li>
-							<li><a href="#" class="link">Преимущества</a></li>
-							<li><a href="#" class="link">Как мы работаем</a></li>
-							<li><a href="#" class="link">Контакты</a></li>
+							<li><a href="#about" class="link">Кто мы</a></li>
+							<li><a href="#principles" class="link">Принципы работы</a></li>
+							<li><a href="#arrange" class="link">Наши компетенции</a></li>
+							<li><a href="#services" class="link">Услуги</a></li>
+							<li><a href="#events" class="link">Мероприятия</a></li>
+							<li><a href="#choose" class="link">Преимущества</a></li>
+							<li><a href="#plan" class="link">Как мы работаем</a></li>
+							<li><a href="#contacts" class="link">Контакты</a></li>
 						</ul>
+
+						<div class="info">
+
+							<a href="#" class="info__mail link"><i class="fas fa-envelope"></i> eventteam13@gmail.com</a>
+
+							<div class="info__soc">
+								<a href="https://vk.com/13eventteam" target="_blank"><i class="fab fa-vk"></i></a>
+								<a href="https://facebook.com/eventteam13" target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://instagram.com/13_event" target="_blank"><i class="fab fa-instagram"></i></a>
+							</div>
+
+							<a href="tel:+7(926)001-39-88" class="info__tel link">+7 (926) 001-39-88</a>
+
+							<a href="#" class="btn bell_open">заказать звонок</a>
+
+						</div>
+
 					</nav>
 
 					<div class="info">
@@ -56,14 +73,14 @@
 						<a href="#" class="info__mail link"><i class="fas fa-envelope"></i> eventteam13@gmail.com</a>
 
 						<div class="info__soc">
-							<a href="#"><i class="fab fa-vk"></i></a>
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="https://vk.com/13eventteam" target="_blank"><i class="fab fa-vk"></i></a>
+							<a href="https://facebook.com/eventteam13" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://instagram.com/13_event" target="_blank"><i class="fab fa-instagram"></i></a>
 						</div>
 
 						<a href="tel:+7(926)001-39-88" class="info__tel link">+7 (926) 001-39-88</a>
 
-						<a href="#" class="btn">заказать звонок</a>
+						<a href="#" class="btn bell_open">заказать звонок</a>
 
 					</div>
 				</div>
@@ -74,12 +91,12 @@
 
 	<main class="main">
 	
-		<section class="header-content" style="background-image: url(img/header-bg.jpg);">
+		<section class="header-content" data-parallax="scroll" data-image-src="img/header-bg.jpg">
 			<div class="container">
 				
 				<h1>Незабываемые мероприятия <br><span>«под ключ»</span></h1>
 
-				<a href="#" class="btn btn-active">Организовать!</a>
+				<a href="#" class="btn btn-active organize_open">Организовать!</a>
 
 				<ul>
 					<li>КАЧЕСТВЕННО</li>
@@ -91,10 +108,14 @@
 			</div>
 		</section>
 
-		<section class="about section">
+		<section id="about" class="about section">
 			<div class="container">
 
-					<div class="square"></div>
+				<div class="square about__square"></div>
+
+				<div class="parallax about__parallax">
+					<img src="img/parallax.png" alt="parallax">
+				</div>
 
 				<div class="row">
 					<div class="col-lg-6">
@@ -124,40 +145,40 @@
 
 				<div class="about__container wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 					<h3>“У нас все просто, просто как 13”</h3>
-					<a href="#" class="btn btn-active">Узнать подробнее!</a>
+					<a href="#" class="btn btn-active more_open">Узнать подробнее!</a>
 				</div>
 
 			</div>
 		</section>
 
-		<section class="work section section-reverse" style="background-image: url(img/work-bg.jpg);">
+		<section class="work section section-reverse" data-parallax="scroll" data-image-src="img/work-bg.jpg">
 			<div class="container">
 				
-				<h2>Как мы работаем!</h2>
+				<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">Как мы работаем!</h2>
 
 				<div class="work__list">
-					<div class="work__item">
+					<div class="work__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 						<div class="work__icon-block">
 							<svg><use xlink:href="#icon-sinking"></use></svg>
 						</div>
 						<h4>ПОЛНОЕ ПОГРУЖЕНИЕ</h4>
 						<p>Готовя мероприятие, мы полностью погружаемся в его атмосферу и стараемся сделать так, чтобы она захватила каждого участника. Это позволяет объединить очень разных людей, сделав их ближе</p>
 					</div>
-					<div class="work__item">
+					<div class="work__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 						<div class="work__icon-block">
 							<svg><use xlink:href="#icon-professionalism"></use></svg>
 						</div>
 						<h4>ПРОФФЕСИОНАЛИЗМ</h4>
 						<p>Наша команда – это отличные специалисты и единомышленники, проверенные временем и ситуациями, любящие и знающие свое дело. Мы делаем людей счастливыми, а их важные события из жизни яркими и запоминающимися</p>
 					</div>
-					<div class="work__item">
+					<div class="work__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 						<div class="work__icon-block">
 							<svg><use xlink:href="#icon-uniqueness"></use></svg>
 						</div>
 						<h4>УНИКАЛЬНОСТЬ</h4>
 						<p>У нас нет пакетов услуг. Всегда индивидуальные решения, только креативные идеи и никаких типовых сценариев. Каждое мероприятие уникально и мы его собираем по кусочкам специально под клиента</p>
 					</div>
-					<div class="work__item">
+					<div class="work__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">
 						<div class="work__icon-block">
 							<svg><use xlink:href="#icon-problem"></use></svg>
 						</div>
@@ -166,11 +187,11 @@
 					</div>
 				</div>
 
-				<div class="work__form">
+				<div class="work__form wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 					<h3>Мы поможем вам  организовать мероприятие!</h3>
 
 					<form action="sendmail.php" class="order-form" method="post">
-						<input type="hidden" name="subject" value="Организовать!">
+						<input type="hidden" name="subject" value="Мы поможем вам  организовать мероприятие!">
 						<div class="form__group">
 							<div><i class="fas fa-phone"></i><input type="tel" name="phone" required placeholder="Введите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
 							<div><button type="submit" class="btn btn-active" name="submit" value="отправить">Организовать!</button></div>
@@ -182,25 +203,32 @@
 			</div>
 		</section>
 
-		<section class="principles section" style="background-image: url(img/principles-bg.png);">
+		<section id="principles" class="principles section" style="background-image: url(img/principles-bg.png);">
+
+			<div class="square principles__square"></div>
+			
+			<div class="parallax principles__parallax">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
 			<div class="container">
-				
-				<h2>Принципы <br>нашей <br>работы</h2>
+
+				<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">Принципы <br>нашей <br>работы</h2>
 
 				<div class="principles__box">
 
 					<div class="principles__line">
-						<div class="principles__block">
+						<div class="principles__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 							<div>
-								<svg><use xlink:href="#icon-events"></use></svg>
+								<div class="svg-before"><svg><use xlink:href="#icon-events"></use></svg></div>
 								<h4>ДЕЛОВЫЕ МЕРОПРИЯТИЯ</h4>
 								<p>Конференции, семинары, <br>выставки, презентации, форумы</p>
 								<a href="#">подробнее <i class="fas fa-angle-right"></i></a>
 							</div>
 						</div>
-						<div class="principles__block">
+						<div class="principles__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 							<div>
-								<svg><use xlink:href="#icon-services"></use></svg>
+								<div class="svg-before"><svg><use xlink:href="#icon-services"></use></svg></div>
 								<h4>УСЛУГИ ДЛЯ ОРГАНИЗАЦИЙ</h4>
 								<p>Корпоративы, team building, <br>тренинги</p>
 								<a href="#">подробнее <i class="fas fa-angle-right"></i></a>
@@ -209,20 +237,20 @@
 					</div>
 
 					<div class="principles__line">
-						<div class="principles__block principles__block-none">
+						<div class="principles__block principles__block-none wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 							<img src="img/icon/principles-logo.svg" alt="logo" width="180" height="180" class="principles__block_logo">
 						</div>
-						<div class="principles__block">
+						<div class="principles__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 							<div>
-								<svg><use xlink:href="#icon-developments"></use></svg>
+								<div class="svg-before"><svg><use xlink:href="#icon-developments"></use></svg></div>
 								<h4>ЭКСКЛЮЗИВНЫЕ СОБЫТИЯ</h4>
 								<p>Авторские постановки, <br>идеальные свидания, балы</p>
 								<a href="#">подробнее <i class="fas fa-angle-right"></i></a>
 							</div>
 						</div>
-						<div class="principles__block">
+						<div class="principles__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">
 							<div>
-								<svg><use xlink:href="#icon-individuals"></use></svg>
+								<div class="svg-before"><svg><use xlink:href="#icon-individuals"></use></svg></div>
 								<h4>УСЛУГИ ЧАСТНЫМ ЛИЦАМ</h4>
 								<p>Свадьбы, юбилеи, дни рождения, <br>детские праздники, <br>выпускные вечера</p>
 								<a href="#">подробнее <i class="fas fa-angle-right"></i></a>
@@ -234,44 +262,44 @@
 			</div>
 
 			<div class="container">
-				<div class="services section-reverse">
+				<div id="services" class="services section-reverse">
 
 					<div class="row">
 
 						<div class="col-lg-6">
-							<h2>Широкий <br>спектр услуг</h2>
+							<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">Широкий <br>спектр услуг</h2>
 							<ul class="services__list">
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 									<div>
 										<svg><use xlink:href="#one"></use></svg>
 									</div>
 									<p>Обеспечение <br>безопасности</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 									<div>
 										<svg><use xlink:href="#two"></use></svg>
 									</div>
 									<p>Звуковое <br>сопровождение</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 									<div>
 										<svg><use xlink:href="#three"></use></svg>
 									</div>
 									<p>Автомобиль <br>(трансфер)</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 									<div>
 										<svg><use xlink:href="#four"></use></svg>
 									</div>
 									<p>Полное техническое <br>сопровождение: звук, <br>свет, спецэффекты</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 									<div>
 										<svg><use xlink:href="#five"></use></svg>
 									</div>
 									<p>Обеспечение <br> трансфера, <br>логистика</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 									<div>
 										<svg><use xlink:href="#six"></use></svg>
 									</div>
@@ -283,55 +311,55 @@
 
 						<div class="col-lg-6">
 							<ul class="services__list">
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 									<div>
 										<svg><use xlink:href="#seven"></use></svg>
 									</div>
 									<p>Фотограф</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 									<div>
 										<svg><use xlink:href="#eight"></use></svg>
 									</div>
 									<p>Видеограф</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 									<div>
 										<svg><use xlink:href="#nine"></use></svg>
 									</div>
 									<p>Ведущий</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 									<div>
 										<svg><use xlink:href="#ten"></use></svg>
 									</div>
 									<p>подбор площади</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 									<div>
 										<svg><use xlink:href="#eleven"></use></svg>
 									</div>
 									<p>Мастер-классы <br>и тренинги</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 									<div>
 										<svg><use xlink:href="#twelve"></use></svg>
 									</div>
 									<p>Творческие номера, <br>шоу-программа</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 									<div>
 										<svg><use xlink:href="#thirteen"></use></svg>
 									</div>
 									<p>Кейтеринг</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 									<div>
 										<svg><use xlink:href="#fourteen"></use></svg>
 									</div>
 									<p>Любая другая услуга по <br>желанию клиента - список <br>может быть бесконечным.</p>
 								</li>
-								<li class="services__item">
+								<li class="services__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 									<div>
 										<svg><use xlink:href="#fifteen"></use></svg>
 									</div>
@@ -346,40 +374,49 @@
 			</div>
 		</section>
 	
-		<section class="arrange section">
+		<section id="arrange" class="arrange section">
+
+			<div class="parallax arrange__parallax-one">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
+			<div class="parallax arrange__parallax-two">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
 			<div class="container">
 				
-				<h2>Мы организовываем</h2>
+				<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">Мы организовываем</h2>
 
 				<div class="arrange__container">
 
-					<div class="arrange__block">
+					<div class="arrange__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 						<img src="img/arrange/1.jpg" alt="img">
 						<div class="arrange__content">
 							<h3>Свадьбы</h3>
 							<p class="sub-title">Мы знаем, как сделать свадьбу любого масштаба и бюджета идеальной, безупречной и запоминающейся...</p>
 							<p>Мы сделаем все необходимое для фееричности предстоящего праздника, который запомнится гостям надолго. Организация Юбилея требует особой атмосферы, которая доставит удовольствие юбиляру, увлечет гостей, чтобы близкие люди смогли открыться с новой стороны и весело провести время.</p>
-							<a href="#" class="btn">Организовать!</a>
+							<a href="#" class="btn organize_open">Организовать!</a>
 						</div>
 					</div>
 
-					<div class="arrange__block">
+					<div class="arrange__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 						<img src="img/arrange/2.jpg" alt="img">
 						<div class="arrange__content">
 							<h3>Дни рождения</h3>
 							<p class="sub-title">День Рождения - одно из радостных событий жизни каждого человека.</p>
 							<p>Мы сделаем все необходимое для фееричности предстоящего праздника, который запомнится гостям надолго. Организация Юбилея требует особой атмосферы, которая доставит удовольствие юбиляру, увлечет гостей, чтобы близкие люди смогли открыться с новой стороны и весело провести время.</p>
-							<a href="#" class="btn">Организовать!</a>
+							<a href="#" class="btn organize_open">Организовать!</a>
 						</div>
 					</div>
 
-					<div class="arrange__block">
+					<div class="arrange__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">
 						<img src="img/arrange/3.jpg" alt="img">
 						<div class="arrange__content">
 							<h3>Детские празники</h3>
 							<p class="sub-title">Мы знаем`, как сделать свадьбу любого масштаба и бюджета идеальной, безупречной и запоминающейся.</p>
 							<p>Мы сделаем все необходимое для фееричности предстоящего праздника, который запомнится гостям надолго. Организация Юбилея требует особой атмосферы, которая доставит удовольствие юбиляру, увлечет гостей, чтобы близкие люди смогли открыться с новой стороны и весело провести время.</p>
-							<a href="#" class="btn">Организовать!</a>
+							<a href="#" class="btn organize_open">Организовать!</a>
 						</div>
 					</div>
 
@@ -388,7 +425,14 @@
 			</div>
 		</section>
 
-		<section class="events section" style="background-image: url(img/events-bg.jpg);">
+		<section id="events" class="events section" style="background-image: url(img/events-bg.jpg);">
+			
+			<div class="square events__square"></div>
+
+			<div class="parallax events__parallax">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
 			<div class="container">
 				<div class="row">
 
@@ -399,22 +443,22 @@
 					</div>
 
 					<div class="col-lg-6">
-						<h2>Деловые мероприятия</h2>
+						<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">Деловые мероприятия</h2>
 						<div class="events__list">
-							<div class="events__item">
+							<div class="events__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 								<div><svg><use xlink:href="#icon-events-1"></use></svg></div>
 								<p><b>КОРПОРАТИВЫ</b> – это запоминающиеся события, которые позволяют снять напряжение и пообщаться сотрудникам в неформальной дружеской обстановке на юбилее компании, новогоднем вечере, в календарные и профессиональные праздники или после завершения крупного проекта.</p>
 							</div>
-							<div class="events__item">
+							<div class="events__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 								<div><svg><use xlink:href="#icon-events-2"></use></svg></div>
 								<p><b>TEAM BUILDING</b> - один из самых эффективных инструментов управления компанией, который способствует получению заряда бодрости, сплочению коллектива и повышению результативности последующей работы. Интеллектуальные, творческие и деловые игры, бизнес-тренинги, спортивные соревнования не оставят никого равнодушным.</p>
 							</div>
-							<div class="events__item">
+							<div class="events__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">
 								<div><svg><use xlink:href="#icon-events-3"></use></svg></div>
 								<p><b>ДЕЛОВЫЕ МЕРОПРИЯТИЯ</b> - это бизнес-событие, хватывающее обширные слои деловой общественности, которое предполагает обсуждение достижений/неудач компании, разбор полетов и обмен опытом. Успешное проведение делового мероприятия повышает статус компании, привлекает целевую аудиторию, ведет к развитию бизнеса и росту прибыли.</p>
 							</div>
 
- 							<a href="#" class="btn btn-active">Организовать!</a>
+ 							<a href="#" class="btn btn-active organize_open wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".5s">Организовать!</a>
 						</div>
 					</div>
 
@@ -422,31 +466,31 @@
 			</div>
 		</section>
 
-		<section class="choose section section-reverse" style="background-image: url(img/choose-bg.jpg);">
+		<section id="choose" class="choose section section-reverse" data-parallax="scroll" data-image-src="img/choose-bg.jpg">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-7">
+					<div class="col-xl-7">
 
-						<h2>Почему выбирают нас</h2>
+						<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">Почему выбирают нас</h2>
 
 						<div class="choose__list">
 
-							<div class="choose__item">
+							<div class="choose__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
 								<div><svg><use xlink:href="#check"></use></svg></div>
 								<p>Чуткость к вашим пожеланиям и комфортное общение. Мы честные, открытые, пунктуальные, ответственные, вежливые и веселые.</p>
 							</div>
 
-							<div class="choose__item">
+							<div class="choose__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">
 								<div><svg><use xlink:href="#check"></use></svg></div>
 								<p>На связи 24 часа в сутки 365 дней в году. Мы всегда рядом, вне зависимости от времени года, праздников, выходных и, если нужно, не спим ночами.</p>
 							</div>
 
-							<div class="choose__item">
+							<div class="choose__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">
 								<div><svg><use xlink:href="#check"></use></svg></div>
 								<p>Прозрачное ценообразование - в работе с нами вы будете знать, как потрачен каждый рубль из бюджета. Вам не придется платить за кота в мешке!</p>
 							</div>
 
-							<div class="choose__item">
+							<div class="choose__item wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">
 								<div><svg><use xlink:href="#check"></use></svg></div>
 								<p>Знание неочевидных деталей и нюансов, пристальное и ответственно внимание к ним. Мы ведем и контролируем ваше мероприятие от начала до конца.</p>
 							</div>
@@ -458,21 +502,26 @@
 		</section>
 
 		<section class="value section">
+
+			<div class="parallax value__parallax-one">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
 			<div class="container">
 				<div class="row">
 
-					<div class="col-lg-5">
-						<h2>Сколько стоит?</h2>
-						<p>Каждое мероприятие уникально и затраты отличаются. Остается неизменным только принцип расчета стоимости наших услуг -10% от бюджета мероприятия.</p>
-						<blockquote>С компанией Event team “13” Вы экономите Ваши деньги, время и нервные клетки!</blockquote>
+					<div class="col-xl-5">
+						<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">Сколько стоит?</h2>
+						<p class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".2s">Каждое мероприятие уникально и затраты отличаются. Остается неизменным только принцип расчета стоимости наших услуг -10% от бюджета мероприятия.</p>
+						<blockquote class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">С компанией Event team “13” Вы экономите Ваши деньги, время и нервные клетки!</blockquote>
 					</div>
 
-					<div class="col-lg-7">
-						<div class="value__form">
+					<div class="col-xl-7">
+						<div class="value__form wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s" style="background-image: url(img/value-bg.png);">
 							<h3>Узнать стоимость организации вашего <br>незабываемого мероприятия!</h3>
 
-							<form action="sendmail.php" class="order-form" method="post">
-								<input type="hidden" name="subject" value="рассчитать!">
+							<form action="sendmail.php" class="calculate-form" method="post">
+								<input type="hidden" name="subject" value="Узнать стоимость организации вашего незабываемого мероприятия!">
 								<div class="form__group">
 									<div><i class="fas fa-phone"></i><input type="tel" name="phone" required placeholder="Введите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
 									<div><button type="submit" class="btn btn-active" name="submit" value="отправить">рассчитать!</button></div>
@@ -485,9 +534,92 @@
 			</div>
 		</section>
 
-		<section class="section plan">
+		<section id="plan" class="plan section">
+
+			<div class="parallax plan__parallax-one">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
+			<div class="parallax plan__parallax-two">
+				<img src="img/parallax.png" alt="parallax">
+			</div>
+
 			<div class="container">
-				<h2>Как мы организуем мероприятие для наших клиентов</h2>
+				<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">Как мы организуем мероприятие для наших клиентов</h2>
+
+				<div class="plan__list wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s">
+
+					<div class="plan__item">
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>1</span></div>
+							<p>Обращение или заявка</p>
+							<a href="#" class="organize_open">оставить заявку <i class="fas fa-angle-right"></i></a>
+						</div>
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>2</span></div>
+							<p>Ознакомительная <br>встреча - <br>формулирование <br>цели, задач</p>
+						</div>
+					</div>
+
+					<div class="plan__item">
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>3</span></div>
+							<p>Разработка концепции, <br>подготовка идей <br>мероприятия </p>
+						</div>
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>4</span></div>
+							<p>Заключение <br>договора, <br>подготовка сметы</p>
+						</div>
+					</div>
+
+					<div class="plan__item">
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>5</span></div>
+							<p>Синхронизация <br>идей и ресурсов</p>
+						</div>
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>6</span></div>
+							<p>Согласование всех <br>деталей, подготовка <br>к мероприятию</p>
+						</div>
+					</div>
+
+					<div class="plan__item">
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>7</span></div>
+							<p>Качественная <br>реализация проекта</p>
+						</div>
+						<div class="plan__item_block">
+							<div class="plan__namber"><span>8</span></div>
+							<p>Получение обратной <br>связи от заказчика, <br>подведение итогов</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contacts" class="contacts section" data-parallax="scroll" data-image-src="img/contacts-bg.jpg">
+			<div class="container">
+				
+				<div class="contacts__block wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".1s" style="background-image: url(img/contacts___block-bg.png);">
+					<h2 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".3s">Контакты</h2>
+
+					<h4 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">Телефон: </h4>
+					<ul class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".5s">
+						<li><a href="tel:+7(926)001-39-88" class="link"><i class="fas fa-phone"></i> +7 (926) 001-39-88</a> - Александр</li>
+						<li><a href="tel:+7(916)456-04-24" class="link"><i class="fas fa-phone"></i> +7 (916) 456-04-24</a> - Наталья</li>
+					</ul>
+
+					<h4 class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".4s">Е-mail: </h4>
+					<ul class="wow bounceInUp" data-wow-duration=".6s" data-wow-delay=".5s">
+						<li><a href="#" class="link" target="_blank"><i class="fas fa-envelope"></i> eventteam13@gmail.com</a></li>
+						<li><a href="https://instagram.com/13_event" class="link" target="_blank"><i class="fab fa-instagram"></i> instagram.com/13_event</a></li>
+						<li><a href="https://vk.com/13eventteam" class="link" target="_blank"><i class="fab fa-vk"></i> vk.com/13eventteam</a></li>
+						<li><a href="https://facebook.com/eventteam13" class="link" target="_blank"><i class="fab fa-facebook-f"></i> facebook.com/eventteam13</a></li>
+					</ul>
+				</div>
+
 			</div>
 		</section>
 
@@ -496,61 +628,130 @@
 	<footer class="footer">
 		<div class="container">
 
+			<div class="header__container">
+
+				<div class="header__logo">
+					<a href="index.html"><img src="img/logo.png" alt="logo" width="100" height="100"></a>
+				</div>
+
+				<div class="header__line">
+					<nav class="nav">
+						<ul>
+							<li><a href="#about" class="link">Кто мы</a></li>
+							<li><a href="#principles" class="link">Принципы работы</a></li>
+							<li><a href="#arrange" class="link">Наши компетенции</a></li>
+							<li><a href="#services" class="link">Услуги</a></li>
+							<li><a href="#events" class="link">Мероприятия</a></li>
+							<li><a href="#choose" class="link">Преимущества</a></li>
+							<li><a href="#plan" class="link">Как мы работаем</a></li>
+							<li><a href="#contacts" class="link">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<div class="info">
+
+						<a href="#" class="info__logo">Организация мероприятий <br> любой сложности</a>
+
+						<a href="#" class="info__mail link"><i class="fas fa-envelope"></i> eventteam13@gmail.com</a>
+
+						<a href="tel:+7(926)001-39-88" class="info__mail link"><i class="fas fa-phone"></i> +7(926)001-39-88</a>
+
+						<a href="tel:+7(926)001-39-88" class="info__mail link"><i class="fas fa-phone"></i> +7 (926) 001-39-88</a>
+
+						<div class="info__soc">
+							<a href="https://vk.com/13eventteam" target="_blank"><i class="fab fa-vk"></i></a>
+							<a href="https://facebook.com/eventteam13" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://instagram.com/13_event" target="_blank"><i class="fab fa-instagram"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="copy">
+				<a href="bestslide.ru">Сделано в bestslide.ru</a>
+				<span>© eventteam13, 2018 </span>
+			</div>
+
 		</div>
 	</footer>
 
 
-<!-- 
-	<div class="modal" id="order">
+	<div class="modal" id="organize">
 
-			<form action="sendmail.php" class="order-form" method="post">
+			<form action="sendmail.php" class="organize-form" method="post">
 
-				<input type="hidden" name="subject" value="Оформление заказа">
-				<input type="hidden" name="product" value="Стуло">
+				<input type="hidden" name="subject" value="Организовать мероприятие">
 				
-				<button class="close order_close" type="button">
+				<button class="close organize_close" type="button">
 					<img src="img/icon/close.svg" alt="close" width="25" height="25">
 				</button>
 
-				<h2>Оформление заказа</h2>
-				<p class="sub-title">Вы заказываете</p>
-
-				<div class="modal__container">
-					<p>Arm Chair Queens Cosy Blue</p>
-					<div class="calculat">
-
-					<div class="quantity-block">
-						<button type="button" class="pluse button">+</button>
-							<input class="number num" type="number" name="number" value="1" data-price="15495" readonly>
-						<button type="button" class="minus button">-</button>
-					</div>
-
-					</div>
-					<b><span class="price">15 495</span><span> руб.</span></b>
-				</div>
-				
-
-				<h3>Ваши контактые данные</h3>
+				<h3>Организовать <br>мероприятие</h3>
+				<p class="sub-title">Заполните форму и мы свяжемся с Вами <br>в  течение 5 минут</p>
 
 				<div class="form-group">
-					<div><input type="text" class="form__field" name="name" placeholder="Введите ваше имя" required></div>
-					<div><input type="tel" name="phone" class="form__field" required placeholder="Ведите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
-					<div><button type="submit" class="btn" name="submit" value="отправить">оформить заказ</button></div>
+					<div><i class="fas fa-user"></i><input type="text" name="name" placeholder="Введите ваше имя" required></div>
+					<div><i class="fas fa-phone"></i><input type="tel" name="phone" required placeholder="Ведите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+					<div><button type="submit" class="btn btn-active" name="submit" value="отправить">Отправить заявку!</button></div>
 				</div>
-
 
 			</form>
 	</div>
 	
+	<div class="modal" id="bell">
+
+			<form action="sendmail.php" class="bell-form" method="post">
+
+				<input type="hidden" name="subject" value="Заказать звонок">
+				
+				<button class="close bell_close" type="button">
+					<img src="img/icon/close.svg" alt="close" width="25" height="25">
+				</button>
+
+				<h3>Заказать звонок</h3>
+				<p class="sub-title">Заполните форму и мы свяжемся с Вами <br>в  течение 5 минут</p>
+
+				<div class="form-group">
+					<div><i class="fas fa-user"></i><input type="text" name="name" placeholder="Введите ваше имя" required></div>
+					<div><i class="fas fa-phone"></i><input type="tel" name="phone" required placeholder="Ведите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+					<div><button type="submit" class="btn btn-active" name="submit" value="отправить">Отправить заявку!</button></div>
+				</div>
+
+			</form>
+	</div>
+
+	<div class="modal" id="more">
+
+			<form action="sendmail.php" class="more-form" method="post">
+
+				<input type="hidden" name="subject" value="Узнать подробнее!">
+				
+				<button class="close more_close" type="button">
+					<img src="img/icon/close.svg" alt="close" width="25" height="25">
+				</button>
+
+				<h3>Узнать подробнее!</h3>
+				<p class="sub-title">Заполните форму и мы свяжемся с Вами <br>в  течение 5 минут</p>
+
+				<div class="form-group">
+					<div><i class="fas fa-user"></i><input type="text" name="name" placeholder="Введите ваше имя" required></div>
+					<div><i class="fas fa-phone"></i><input type="tel" name="phone" required placeholder="Ведите ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"></div>
+					<div><button type="submit" class="btn btn-active" name="submit" value="отправить">Отправить заявку!</button></div>
+				</div>
+
+			</form>
+	</div>
+
 	<div class="modal" id="thanks">
 		<button class="close thanks_close" type="button">
 					<img src="img/icon/close.svg" alt="close" width="25" height="25">
 		</button>
 
-		<h2>Спасибо <br>за доверие!</h2>
-		<p>Мы обязательно с вами свяжемся!</p>
-		<img src="img/modal.jpg" alt="modal">
-	</div> -->
+		<h3>Благодарим <br>за  доверие</h3>
+		<p>Наш консультант свяжемся с Вами <br>в  течение 5 минут</p>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 	<script>

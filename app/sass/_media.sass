@@ -1,66 +1,372 @@
 
+@media only screen and (max-width : 1900px)
+	.header
+		overflow: hidden
+	.nav
+		&::before
+			width: 100%
+
+@media only screen and (max-width : 1400px)
+	.events
+		background-position:  -40% 0
+
+
 @media only screen and (max-width : 1200px)
+	
+	.section
+		padding: 50px 0
+
+		h2
+			margin-bottom: 30px
 
 	.header
+		&__logo
+			margin-right: 10px
+			img
+				height: 70px
+				width: 70px
+
+		&-content
+			padding-top: 150px
+			padding-bottom: 50px
+
+			ul
+				width: 60%
+
+	.nav
+		li
+			margin-right: 20px
+
+	.info
+		padding-top: 10px
+		&__tel
+			font-size: 16px
+
+		.btn
+			height: 40px
+			line-height: 40px
+			padding: 0 20px
+
+	.about
+		p
+			br
+				display: none
+
+		&__container
+			margin-bottom: 0
+	
+	.principles
+		padding-bottom: 0
+		&__block-none
+			display: none
+
+	.services
+		padding: 0
+		p
+			white-space: normal
+			font-size: 12px
+
+		&__item
+			div
+				left: 30px
+
+	.arrange
+		h3
+			font-size: 22px
+
+		.sub-title
+			font-size: 14px
+
+		&__block
+			&:hover
+				.arrange__content
+					padding: 50px 20px
+					.btn
+						width: 100%
+
+		&__content
+			top: 350px
+
+	.events
+		background-position: -1000px 0
+		margin-bottom: 0
+
+		&__item:nth-child(3)
+			margin-bottom: 30px
+
+		&__box-img
+			width: 300px
+			height: 300px
+
+	.choose
+		background-position: center left
+
+		&__item
+			margin-bottom: 35px
+
+	.value
+		padding-bottom: 0
+		blockquote
+			margin-bottom: 30px
+
+		&__form
+			margin: 0
+
+		.form__group
+			margin: 0 auto
+			width: 60%
+	
+	.plan
+		p
+			br
+				display: none
+
+		&__list
+			background-image: none
+			column-count: 2
+
+		&__item
+			width: 50%
+			&_block
+				margin-bottom: 35px
+				height: auto
+				min-height: 80px
+				padding-left: 75px
+				&:nth-child(2)
+					padding-left: 75px
+					padding-right: 0
+					height: auto
+					min-height: 80px
+					margin-bottom: 0
+					.plan__namber
+						left: 0
+						right: auto
 
 
 @media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
+	.parallax
+		display: none
+
+	.square
+		display: none
+	
+	.info
+		padding: 0 70px 0 0
+
+		&__mail
+			display: none
+
+		&__soc
+			display: none
+
+		&__tel
+			display: none
+	
+	h1
+		font-size: 40px
+	
+	h2
+		font-size: 35px
+
+	.section
+		h2
+			margin-bottom: 30px
+	
+	.header
+		&-menu
+			background-color: #000
+
+		&-content
+			padding-top: 120px
+			ul
+				width: 100%
+				li
+					margin-bottom: 20px
+
+			.btn
+				margin-bottom: 35px
+				padding: 0 50px
+				height: 50px
+				line-height: 50px
+				font-size: 14px
+
+		.nav
+			position: fixed
+			display: block
+			flex-direction: column
+			align-items: center
+			overflow: auto
+			width: 100%
+			height: 100%
+			right: -100%
+			top: 70px
+			z-index: -1
+			background: rgba(0, 0, 0, .9)
+			transition: all .3s
+			&::before
+				display: none
+
+			ul
+				display: flex
+				flex-direction: column
+				justify-content: center
+
+			li
+				margin: 0
+				margin-bottom: 10px
+				text-align: center
+
+			&-active
+				right: 0
+				padding: 40px 0
+
+			.info
+				display: block
+				text-align: center
+				padding: 0
+
+				&__soc
+					display: block
+					margin-bottom: 10px
+				&__mail
+					display: block
+					margin-bottom: 10px
+				&__tel
+					display: block
+					margin-bottom: 10px
+
+	.about
+		&__box
+			padding-top: 30px
+
+		&__container
+			margin-top: 30px
+			padding: 30px 10px
+			flex-direction: column
+			text-align: center
+			h3
+				margin-bottom: 20px
+	
+	.work
+		&__list
+			flex-wrap: wrap
+			margin-bottom: 0
+		&__item
+			width: 45%
+			margin-bottom: 30px
+
+	.principles
+		background-size: cover
+		h2
+			br
+				display: none
+
+		&__box
+			transform: translate(0, 0) rotate(0)
+
+		&__block
+			width: 50%
+			div
+				position: relative
+				transform: rotate(0)
+				left: 0
+
+	.services
+		padding-top: 30px
+		margin-top: 0
+
+		&__item
+			margin-bottom: 20px
+			div
+				width: 70px
+				height: 70px
+				left: 50%
+				transform: translate(-50%, 0) rotate(45deg)
+	
+	.arrange
+		&__container
+			flex-wrap: wrap
+			justify-content: space-around
+		&__block
+			width: 48%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+		.sub-title
+			margin-bottom: 15px
+	
+	.events
+		&__box-img
+			top: 0
+			left: 50%
+			transform: translate(-50%, 0) rotate(45deg)
+			margin-bottom: 70px
+	
+	.choose
+		p
+			margin-top: 15px
+
+		&__item
+			margin-bottom: 25px
+			div
+				width: 70px
+				height: 70px
+
+	.value
+		.form__group
+			width: 85%
+
+	.plan
+		p
+			br
+				display: none
+
+		&__list
+			flex-direction: column
+
+		&__item
+			width: 100%
+			margin-bottom: 0
+			&:nth-child(n+3)
+				margin-bottom: 0
+
+			&_block
+				margin-bottom: 0
+
+	.footer
+		padding: 20px 0
+		.header
+			&__logo
+				display: none
+
+			&__container
+				flex-direction: column
+		
+		.nav
+			display: none
+
+		.info
+			padding: 0
+			margin-bottom: 20px
+			&__logo
+				display: none
+
+			&__mail
+				display: block
+
+			&__soc
+				display: block
+
+			&__tel
+				display: block
+
+		.copy
+			justify-content: center
 
 	.modal
 		width: 320px
-		padding: 40px
-
-	.nav
-		position: fixed
-		display: block
-		width: 320px
-		height: 100%
-		flex-direction: column
-		right: -100%
-		top: 80px
-		z-index: -1
-		background: rgba(0, 0, 0, .9)
-		transition: all .3s
-
-		ul
-			display: flex
-			flex-direction: column
-			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
-
-		li
-			margin: 0
-			margin-bottom: 10px
-
-		a
-			color: #fff
-			display: block
-			&::before
-				content: ''
-				width: 0
-				transform: scale(0)
-				transition: all .3s
-				position: absolute
-				bottom: 0
-				width: 80%
-				height: 1px
-				background-color: $accent
-				z-index: -1
-
-			&:hover
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
-
-			&:focus
-				color: $accent
-				text-decoration: none
-				&::before
-					transform: scale(1)
+		padding: 40px 20px
 
 	.hamburger
 		display: block
@@ -70,22 +376,229 @@
 	.hamburger-box
 		right: 0
 
+	#thanks
+		padding: 40px
 
 
 @media only screen and (max-width : 767px)
-	.header
+	h1
+		font-size: 30px
+	
+	input, textarea
+		&::placeholder
+			font-size: 12px
+
+	.section
+		h2
+			text-align: center
+			font-size: 26px
+
+	.header-content
+		text-align: center
+		ul
+			text-align: left
+			li
+				font-size: 14px
+
+	.about
+		h3
+			font-size: 24px
+
+		p
+			font-size: 14px
+
+		&__container
+			.btn
+				height: 50px
+				line-height: 50px
+				font-size: 14px
+
+	.principles
+		&__line
+			flex-direction: column
+
+		&__block
+			position: relative
+			width: 100%
+			height: 100%
+			margin: 0 0 20px 0
+			padding: 20px
+
+			svg
+				position: relative
+				top: 0
+				transform: translate(-50%, 0%)
+
+			div
+				top: 0
+
+			.svg-before
+				top: 0
+				transform: translate(-50%, 0%)
+				&::before
+					bottom: 0
+	
+	.arrange
+		&__block
+			width: 80%
+	
+	.work
+		&__form
+			.form__group
+				width: 100%
+				flex-direction: column
+				
+				div
+					margin: 0 auto 10px
+					width: auto
+					&:last-child
+						margin-bottom: 0
+					i
+						top: 22px
+						left: 15px
+
+
+				input
+					width: auto
+					padding-right: 43px
+					padding-left: 43px
+					margin: 0 auto
+
+	.value
+		h3
+			br
+				display: none
+
+		.form__group
+			width: 100%
+			flex-direction: column
+			
+			div
+				margin: 0 auto 10px
+				width: auto
+				&:last-child
+					margin-bottom: 0
+				i
+					top: 22px
+					left: 15px
+
+			input
+				width: auto
+				padding-right: 43px
+				padding-left: 43px
+				margin: 0 auto
+
+
+	.contacts__block
+		margin: 0 auto
+	
+	.footer
+		.info
+			flex-direction: column
+			a
+				margin-bottom: 10px
+
 
 @media only screen and (max-width : 576px)
-	.header
+	.section
+		padding: 30px 0
+		h2
+			margin-bottom: 20px
+
+	.info
+		.btn
+			display: none
+
+	.header-content
+		.nav
+			.info
+				.btn
+					display: block
+
+	.work__item
+		width: 48%
+
 
 @media only screen and (max-width : 480px)
 	.header
+		&-content
+			ul
+				column-count: 1
+				margin-left: 20%
 
+				li
+					&:last-child
+						margin-bottom: 0
+	
+	.about
+		&__box
+			flex-direction: column
+			justify-content: center
+			align-items: center
 
+		&__block
+			width: 65%
+			margin-bottom: 40px
+			&:nth-child(3)
+				width: 65%
+				&::before
+					right: 20px
 
+	.work
+		h2
+			margin-bottom: 30px
+		
+		h3
+			font-size: 20px
 
+		h4
+			margin-top: 20px
+			margin-bottom: 5px
 
+		&__item
+			width: 100%
 
+	.arrange
+		&__block
+			width: 100%
 
+	.choose
+		&__item
+			width: 100%
+			text-align: center
+			&:nth-child(n+3)
+				margin-bottom: 25px
+
+			div
+				left: 50%
+				transform: translate(-50%, 0) rotate(45deg)
+				margin-left: 0
+				width: 60px
+				height: 60px
+	
+	.events
+		.btn
+			padding: 0 40px
+			margin-left: 75px
+	
+	.services
+		&__item
+			width: 48%
+			margin-bottom: 25px
+
+	.value
+		&__form
+			padding: 15px
+
+	.events
+		&__item
+			padding-left: 75px
+	
+	.plan
+		&__item
+			&_block
+				margin-bottom: 10px
+				&:nth-child(2)
+					margin-bottom: 10px
 
 
