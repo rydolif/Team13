@@ -390,15 +390,16 @@
 
 	&__block
 		position: relative
+		overflow: hidden
 		width: 290px
 		height: 290px
-		background-color: #fff
 		margin: 7.5px
 		border-radius: 10px
 		box-shadow: -10px 10px 30px rgba(134, 58, 129, .2)
-		transition: all .3s
+		transition: all .2s
 		&:hover
-			background-image: linear-gradient(-225deg, #895a99, #4b2694)
+			&::before
+				animation: color .2s linear 1 forwards
 
 			h4, p, a
 				color: #fff
@@ -409,11 +410,21 @@
 			.svg-before
 				&::before
 					background: rgba(255, 255, 255, .15)
+		&::before
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background: linear-gradient(-225deg, #895a99, #4b2694)
+			animation: color-back .2s linear 1 forwards
+
+
 
 		&-none
-			&:hover
-				background-color: #fff
-				background-image: none
+			&::before
+				display: none
 
 		div
 			position: absolute
@@ -445,6 +456,18 @@
 			z-index: -1
 			border-radius: 3px
 
+	@keyframes color
+		0%
+			opacity: 0
+		100%
+			opacity: 1
+
+	@keyframes color-back
+		0%
+	  		opacity: 1
+		100%
+	    	opacity: 0
+	    
 .services
 	padding-bottom: 35px
 	margin-top: -40px

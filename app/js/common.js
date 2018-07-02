@@ -8,7 +8,7 @@ $(".nav ul").on("click","a", function (event) {
     $('body,html').animate({scrollTop: top - 110}, 'slow', 'swing');
 
 //--------------------закриття меню при кліку на ссилку якоря--------------------
-   $('.hamburger').removeClass('hamburger-active');
+$('.hamburger').removeClass('hamburger-active');
    $('.nav').removeClass('nav-active');
    $('.header').removeClass('header-menu');
 });
@@ -131,6 +131,12 @@ $('.hamburger').click(function() {
       };
       ajaxSend('.order-form', t);
     }
+  });
+
+  $("button").on("click", function(){
+    setTimeout(function() {
+      $('.form label').hide();
+    }, 3000);
   });
 
   function ajaxSend(formName, data) {
